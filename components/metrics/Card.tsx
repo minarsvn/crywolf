@@ -25,7 +25,7 @@ export default function MetricCard({ header, link, metric, isCurrency }) {
           </svg>
         </div>
       </a>
-      <p className="mt-2 text-3xl font-bold spacing-sm text-black dark:text-white">
+      <p className="mt-2 text-3xl font-bold spacing-sm text-vio dark:text-vio">
         {metric > 0 && isCurrency && '$'}
         {metric > 0 ? metric.toLocaleString() : '-'}
       </p>

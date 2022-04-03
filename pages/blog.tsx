@@ -20,7 +20,7 @@ export default function Blog({
       description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
     >
       <div className="flex flex-col items-start justify-center max-w-2xl mx-auto mb-16">
-        <h1 className="mb-4 text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white">
+        <h1 className="mb-4 text-3xl font-bold tracking-tight text-vio md:text-5xl dark:text-vio">
           Blog
         </h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">
@@ -53,7 +53,7 @@ export default function Blog({
         </div>
         {!searchValue && (
           <>
-            <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+            <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-vio md:text-4xl dark:text-vio">
               Most Popular
             </h3>
             <BlogPost
@@ -73,7 +73,7 @@ export default function Blog({
             />
           </>
         )}
-        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-black md:text-4xl dark:text-white">
+        <h3 className="mt-8 mb-4 text-2xl font-bold tracking-tight text-vio md:text-4xl dark:text-vio">
           All Posts
         </h3>
         {!filteredBlogPosts.length && (

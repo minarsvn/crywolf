@@ -230,3 +230,7 @@ table {
 .prose .callout > p {
   margin: 0 !important;
 }
+
+.text-vio{
+  color:#845ef7;
+}

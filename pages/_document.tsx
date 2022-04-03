@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from 'next/document';
+import NProgress from 'components/nprogress';
 
 export default function Document(props) {
   return (
@@ -47,7 +48,7 @@ export default function Document(props) {
           name="google-site-verification"
         />
       </Head>
-      <body className="bg-white dark:bg-black text-white dark:text-black">
+      <body className="bg-white dark:bg-black text-vio dark:text-vio">
         <Main />
         <NextScript />
       </body>
