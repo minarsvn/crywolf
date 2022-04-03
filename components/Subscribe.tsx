@@ -47,7 +47,7 @@ export default function Subscribe() {
   };
 
   return (
-    <div className="p-6 my-4 w-full bg-purple-300 dark:bg-purple-300">
+    <div className="p-6 my-4 w-full ">
       <p className="text-lg md:text-xl font-bold text-gray-900 dark:text-gray-100">
         Subscribe to the newsletter
       </p>
@@ -78,12 +78,7 @@ export default function Subscribe() {
         <SuccessMessage>{form.message}</SuccessMessage>
       ) : (
         <p className="text-sm text-gray-800 dark:text-gray-200">
-          {`${
-            subscriberCount > 0 ? subscriberCount.toLocaleString() : '-'
-          } subscribers – `}
-          <Link href="/newsletter">
-            <a>35 issues</a>
-          </Link>
+        
         </p>
       )}
     </div>
