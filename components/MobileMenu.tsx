@@ -32,6 +32,8 @@ export default function MobileMenu() {
 
   return (
     <>
+
+    <div className="content-center ">
       <button
         className={cn(styles.burger, 'visible md:hidden')}
         aria-label="Toggle menu"
@@ -41,7 +43,8 @@ export default function MobileMenu() {
         <MenuIcon data-hide={isMenuOpen} />
         <CrossIcon data-hide={!isMenuOpen} />
       </button>
-      {isMenuMounted && (
+
+    {isMenuMounted && (
         <ul
           className={cn(
             styles.menu,
@@ -49,14 +52,7 @@ export default function MobileMenu() {
             isMenuRendered && styles.menuRendered
           )}
         >
-          <li
-            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
-            style={{ transitionDelay: '150ms' }}
-          >
-            <Link href="/">
-              <a className="flex w-auto pb-4">Home</a>
-            </Link>
-          </li>
+
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '250ms' }}
@@ -75,10 +71,18 @@ export default function MobileMenu() {
           </li>
           <li
             className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
+            style={{ transitionDelay: '150ms' }}
+          >
+            <Link href="/timeline">
+              <a className="flex w-auto pb-4">Timeline</a>
+            </Link>
+          </li>
+          <li
+            className="border-b border-gray-300 dark:border-gray-700 text-gray-900 dark:text-gray-100 text-sm font-semibold"
             style={{ transitionDelay: '300ms' }}
           >
-            <Link href="/newsletter">
-              <a className="flex w-auto pb-4">Newsletter</a>
+            <Link href="/about">
+              <a className="flex w-auto pb-4">About</a>
             </Link>
           </li>
           <li
@@ -91,6 +95,7 @@ export default function MobileMenu() {
           </li>
         </ul>
       )}
+      </div>
     </>
   );
 }
