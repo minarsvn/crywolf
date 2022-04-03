@@ -6,13 +6,6 @@ import Subscribe from 'components/Subscribe';
 import type { PropsWithChildren } from 'react';
 import type { Blog } from 'contentlayer/generated';
 
-const editUrl = (slug) =>
-  `https://github.com/leerob/leerob.io/edit/main/data/blog/${slug}.mdx`;
-const discussUrl = (slug) =>
-  `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://leerob.io/blog/${slug}`
-  )}`;
-
 export default function BlogLayout({
   children,
   post
@@ -52,23 +45,6 @@ export default function BlogLayout({
         </div>
         <div className="mt-8">
           <Subscribe />
-        </div>
-        <div className="text-sm text-gray-700 dark:text-gray-300">
-          <a
-            href={discussUrl(post.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Discuss on Twitter'}
-          </a>
-          {` • `}
-          <a
-            href={editUrl(post.slug)}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {'Edit on GitHub'}
-          </a>
         </div>
       </article>
     </Container>
