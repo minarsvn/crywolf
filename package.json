@@ -26,6 +26,7 @@
     "next-auth": "4.2.1",
     "next-contentlayer": "^0.1.0",
     "next-themes": "0.0.15",
+    "nextjs-progressbar": "^0.0.14",
     "preact": "^10.6.6",
     "react": "17.0.2",
     "react-dom": "17.0.2",
@@ -60,9 +61,20 @@
     "tabWidth": 2,
     "trailingComma": "none"
   },
-  "name": "CryWolf",
-  "version": "1.0.1",
+  "name": "crywolf",
+  "version": "1.0.2",
   "main": "index.js",
-  "repository": "https://github.com/minarsvn/crywolf.git",
-  "author": "minarsvn <minarshovon909@gmail.com>"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/minarsvn/crywolf.git"
+  },
+  "author": "minarsvn <minarshovon909@gmail.com>",
+  "description": "[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fleerob%2Fleerob.io)",
+  "bugs": {
+    "url": "https://github.com/minarsvn/crywolf/issues"
+  },
+  "homepage": "https://github.com/minarsvn/crywolf#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }
