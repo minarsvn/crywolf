@@ -19,7 +19,8 @@ export default function Home({ videos }) {
               <span className="font-semibold">Life</span>
             </h2>
             <p className="text-gray-600 dark:text-gray-400 mb-16">
-              Helping developers build a faster web. Teaching about web development, serverless, and React / Next.js. Disturbing other to do nothing.
+              Helping developers build a faster web. Teaching about web development, serverless,
+              and React / Next.js. Disturbing other to do nothing.
             </p>
           </div>
           <div className="w-[80px] sm:w-[176px] relative mb-8 sm:mb-0 mr-auto">
@@ -27,7 +28,7 @@ export default function Home({ videos }) {
               alt="Cry Wolf"
               height={176}
               width={176}
-              src="/avatar.jpg"
+              src="/avatar.png"
               className="rounded-full filter grayscale"
             />
           </div>
