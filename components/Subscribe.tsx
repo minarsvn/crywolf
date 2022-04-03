@@ -4,7 +4,7 @@ import useSWR from 'swr';
 import { trackGoal } from 'fathom-client';
 
 import fetcher from 'lib/fetcher';
-import { Form, FormState, Subscribers } from 'lib/types';
+import { Form, FormState } from 'lib/types';
 import SuccessMessage from 'components/SuccessMessage';
 import ErrorMessage from 'components/ErrorMessage';
 import LoadingSpinner from 'components/LoadingSpinner';
@@ -12,8 +12,6 @@ import LoadingSpinner from 'components/LoadingSpinner';
 export default function Subscribe() {
   const [form, setForm] = useState<FormState>({ state: Form.Initial });
   const inputEl = useRef(null);
-  const { data } = useSWR<Subscribers>('/api/subscribers', fetcher);
-  const subscriberCount = new Number(data?.count);
 
   const subscribe = async (e) => {
     e.preventDefault();
@@ -78,7 +76,7 @@ export default function Subscribe() {
         <SuccessMessage>{form.message}</SuccessMessage>
       ) : (
         <p className="text-sm text-gray-800 dark:text-gray-200">
-        
+
         </p>
       )}
     </div>
