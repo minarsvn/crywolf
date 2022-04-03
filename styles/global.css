@@ -246,6 +246,6 @@ a:link {
 }
 
 ::selection {
-  color: white;
+  color: #fff;
   background: #845ef7;
 }
