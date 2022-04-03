@@ -230,12 +230,8 @@ table {
   color:#845ef7;
 }
 
-a:hover {
-  color: #845ef7;
-  background-color: transparent;
-  text-decoration: underline;
-}
-a:link {
+
+.text-lg:link {
   color: #845ef7;
   background-color: transparent;
   text-decoration: none;
