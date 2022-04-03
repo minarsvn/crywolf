@@ -18,11 +18,6 @@
   src: url(/fonts/ibm-plex-sans-var-italic.woff2) format('woff2');
 }
 
-::selection {
-  background-color: #47a3f3;
-  color: #fefefe;
-}
-
 html {
   min-width: 360px;
   scroll-behavior: smooth;
@@ -233,4 +228,24 @@ table {
 
 .text-vio{
   color:#845ef7;
+}
+
+a:hover {
+  color: #845ef7;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:link {
+  color: #845ef7;
+  background-color: transparent;
+  text-decoration: none;
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #845ef7;
+}
+
+::selection {
+  color: white;
+  background: #845ef7;
 }
