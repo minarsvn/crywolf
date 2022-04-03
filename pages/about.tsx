@@ -7,7 +7,7 @@ import avatarBW from 'public/avatar.png';
 
 export default function About() {
   return (
-    <Container title="About – Lee Robinson">
+    <Container title="About – Cry Wolf">
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16 w-full">
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-vio dark:text-vio">
           About Me
@@ -36,10 +36,10 @@ export default function About() {
           </ul>
           <h2>Bio</h2>
           <h3>Job Title</h3>
-          <p>Lee Robinson, Director of Developer Relations at Vercel</p>
+          <p>Cry Wolf, Director of Developer Relations at Vercel</p>
           <h3>Long, 3rd Person</h3>
           <p>
-            Lee Robinson is the Director of Developer Relations at{' '}
+            Cry Wolf is the Director of Developer Relations at{' '}
             <a href="http://vercel.com/">Vercel</a>, where he helps developers
             build a faster web and leads the Next.js community. Prior to that,
             Lee was a Senior Software Engineer focused on the frontend. An
@@ -57,7 +57,7 @@ export default function About() {
           </p>
           <h3>Short, 3rd Person</h3>
           <p>
-            Lee Robinson is the Director of Developer Relations at{' '}
+            Cry Wolf is the Director of Developer Relations at{' '}
             <a href="http://vercel.com/">Vercel</a>, where he helps developers
             build a faster web.
           </p>
@@ -69,7 +69,7 @@ export default function About() {
           </p>
           <h3>Education</h3>
           <p>
-            Lee Robinson graduated from Iowa State University with a BS in
+            Cry Wolf graduated from Iowa State University with a BS in
             Computer Engineering.
           </p>
           <h2>Headshots</h2>
