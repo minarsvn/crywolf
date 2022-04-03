@@ -1,7 +1,6 @@
 import 'styles/global.css';
-import 'styles/nprogress.css';
+import NextNProgress from "nextjs-progressbar";
 import type { AppProps } from 'next/app';
-import NProgress from 'components/nprogress';
 
 import { ThemeProvider } from 'next-themes';
 
@@ -9,7 +8,13 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
       <ThemeProvider attribute="class">
         <Component {...pageProps} />
-            <NProgress />
+        <NextNProgress
+  color="#845ef7"
+  startPosition={0.3}
+  stopDelayMs={200}
+  height={5}
+  showOnShallow={true}
+/>
       </ThemeProvider>
   );
 }
