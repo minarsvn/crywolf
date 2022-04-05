@@ -141,7 +141,7 @@ const FullTimeline = () => (
       </Step>
     </ul>
     <Divider />
-    <Year>1993</Year>
+    <Year>2001</Year>
     <ul>
       <Step title="Born 👶🏼🍼" />
     </ul>
