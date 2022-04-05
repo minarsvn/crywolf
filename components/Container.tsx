@@ -82,7 +82,6 @@ export default function Container(props) {
             <NavItem href="/snippets" text="Snippets" />
             <NavItem href="/timeline" text="Timeline" />
             <NavItem href="/about" text="About" />
-            <NavItem href="/uses" text="Uses" />
           </div>
 
           <button
