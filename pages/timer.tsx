@@ -15,8 +15,8 @@ export default function Newsletter({ newsletters }) {
       description="Thoughts on the software industry, programming, tech, videography, music, and my personal life."
     >
 
-        <div class="overflow-x-auto flex justify-center">
-        <table class="table table-compact w-full">
+        <div className="overflow-x-auto flex justify-center">
+        <table className="table w-full">
           <thead>
             <tr>
               <th></th>
