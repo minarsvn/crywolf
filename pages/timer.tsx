@@ -6,7 +6,6 @@ import { allNewsletters } from 'contentlayer/generated';
 import { pick } from 'lib/utils';
 import { useEffect, useState } from "react";
 
-import VideoCard from '../components/VideoCard';
 
 export default function Newsletter({ newsletters }) {
 
@@ -17,7 +16,6 @@ export default function Newsletter({ newsletters }) {
     >
 
         <div class="overflow-x-auto flex justify-center">
-        <div class="overflow-x-auto">
         <table class="table table-compact w-full">
           <thead>
             <tr>
@@ -225,8 +223,6 @@ export default function Newsletter({ newsletters }) {
           </tfoot>
         </table>
       </div>
-
-</div>
     </Container>
   );
 }
